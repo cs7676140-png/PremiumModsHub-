@@ -17,7 +17,7 @@ def health_check():
     return "Telegram Bot is running smoothly on Render!", 200
 
 def start_bot():
-    if not BOT_TOKEN:
+    if not BOT_TOKEN:  
         return
 
     bot = telebot.TeleBot(BOT_TOKEN)
